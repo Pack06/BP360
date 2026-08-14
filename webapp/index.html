@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#05242f" />
+    <meta name="description" content="Scan a QR code and open the Bible Passages 360 tour app." />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icon-192.png" />
+    <link rel="apple-touch-icon" href="./icon-192.png" />
+    <title>PTP 360</title>
+    <style>
+      html,
+      body {
+        background: #05242f;
+        color: #ffffff;
+        margin: 0;
+        min-height: 100%;
+      }
+
+      .boot-fallback {
+        align-items: center;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+        gap: 18px;
+        justify-content: center;
+        min-height: 100dvh;
+        padding: 32px;
+        text-align: center;
+      }
+
+      .boot-fallback img {
+        height: auto;
+        width: 220px;
+      }
+
+      .boot-fallback p {
+        color: #d3d3d3;
+        font-family: "Courier New", monospace;
+        font-size: 18px;
+        margin: 0;
+      }
+
+      .boot-error {
+        background: #0a3645;
+        margin-top: 8px;
+        max-width: 560px;
+        padding: 14px 16px;
+      }
+    </style>
+    <script>
+      window.showPtpBootError = function (message) {
+        var target = document.getElementById("ptp-boot-message");
+        if (target) {
+          target.className = "boot-error";
+          target.textContent = message;
+        }
+      };
+
+      window.addEventListener(
+        "error",
+        function (event) {
+          var element = event.target;
+          if (element && element !== window && element.tagName) {
+            window.showPtpBootError("PTP 360 could not load " + element.tagName.toLowerCase() + ": " + (element.src || element.href || ""));
+            return;
+          }
+          window.showPtpBootError("PTP 360 app error: " + (event.message || "unknown error"));
+        },
+        true,
+      );
+
+      window.addEventListener("unhandledrejection", function (event) {
+        window.showPtpBootError("PTP 360 app error: " + (event.reason && event.reason.message ? event.reason.message : "startup failed"));
+      });
+    </script>
+    <script type="module" crossorigin src="./ptp-app-v6.js"></script>
+    <link rel="stylesheet" crossorigin href="./ptp-app-v6.css">
+  </head>
+  <body>
+    <div id="root">
+      <main class="boot-fallback">
+        <img src="./ptp-splash-logo.png" alt="Bible Passages" />
+        <p id="ptp-boot-message">Loading PTP 360...</p>
+      </main>
+    </div>
+  </body>
+</html>
