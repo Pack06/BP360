@@ -1,0 +1,37 @@
+{
+  "baseUrl": "https://YOUR_R2_PUBLIC_DOMAIN/",
+  "videos": [
+    {
+      "title": "Jerusalem Walk",
+      "category": "Walking Videos",
+      "url": "videos/walking-videos/jerusalem-walk.mp4"
+    },
+    {
+      "title": "Conversation Sample",
+      "category": "Conv Videos",
+      "url": "videos/conv-videos/conversation-sample.mp4"
+    },
+    {
+      "title": "PTP Sample",
+      "category": "PTP Videos",
+      "url": "videos/ptp-videos/ptp-sample.mp4"
+    }
+  ],
+  "pictures": [
+    {
+      "title": "Temple Mount Model",
+      "category": "3D Models",
+      "url": "pictures/3d-models/temple-mount-model.jpg"
+    },
+    {
+      "title": "Jerusalem",
+      "category": "Biblical Sites",
+      "url": "pictures/biblical-sites/jerusalem.jpg"
+    },
+    {
+      "title": "Ancient Inscription",
+      "category": "Extrabiblical Sites",
+      "url": "pictures/extrabiblical-sites/ancient-inscription.jpg"
+    }
+  ]
+}
