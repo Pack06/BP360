@@ -18,7 +18,7 @@
                BlueprintIdentifier = "111111111111111111115001"
                BuildableName = "BP360View.app"
                BlueprintName = "BP360View"
-               ReferencedContainer = "container:PTP360View.xcodeproj">
+               ReferencedContainer = "container:BP360.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,7 +40,7 @@
             BlueprintIdentifier = "111111111111111111115001"
             BuildableName = "BP360View.app"
             BlueprintName = "BP360View"
-            ReferencedContainer = "container:PTP360View.xcodeproj">
+            ReferencedContainer = "container:BP360.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -57,7 +57,7 @@
             BlueprintIdentifier = "111111111111111111115001"
             BuildableName = "BP360View.app"
             BlueprintName = "BP360View"
-            ReferencedContainer = "container:PTP360View.xcodeproj">
+            ReferencedContainer = "container:BP360.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

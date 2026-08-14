@@ -54,12 +54,12 @@
 		111111111111111111114001 = {
 			isa = PBXGroup;
 			children = (
-				111111111111111111114002 /* PTP360View */,
+				111111111111111111114002 /* BP360 */,
 				111111111111111111114003 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		111111111111111111114002 /* PTP360View */ = {
+		111111111111111111114002 /* BP360 */ = {
 			isa = PBXGroup;
 			children = (
 				111111111111111111112001 /* AppDelegate.swift */,
@@ -77,7 +77,7 @@
 				111111111111111111112013 /* Assets.xcassets */,
 				111111111111111111112014 /* Info.plist */,
 			);
-			path = PTP360View;
+			path = BP360;
 			sourceTree = "<group>";
 		};
 		111111111111111111114003 /* Products */ = {
@@ -124,7 +124,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 111111111111111111119001 /* Build configuration list for PBXProject "PTP360View" */;
+			buildConfigurationList = 111111111111111111119001 /* Build configuration list for PBXProject "BP360" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -298,7 +298,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = PTP360View/Info.plist;
+				INFOPLIST_FILE = BP360/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -319,7 +319,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = PTP360View/Info.plist;
+				INFOPLIST_FILE = BP360/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -336,7 +336,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		111111111111111111119001 /* Build configuration list for PBXProject "PTP360View" */ = {
+		111111111111111111119001 /* Build configuration list for PBXProject "BP360" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				111111111111111111119003 /* Debug */,
